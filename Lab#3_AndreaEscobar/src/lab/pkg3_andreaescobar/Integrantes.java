@@ -12,14 +12,21 @@ import java.util.Date;
  * @author andre
  */
 public class Integrantes extends Pueblo{
-    String nombreIntegrante;
-    String apellido;
-    double altura;
-    Date nacimiento;
+    private String nombreIntegrante;
+    private String apellido;
+    private double altura;
+    private Date nacimiento;
+    private int poderataque;
+    private int defensa;
+    private int curacion;
     
     
     public Integrantes() {
         super();
     }
+
+    
+    
+    
     
 }
