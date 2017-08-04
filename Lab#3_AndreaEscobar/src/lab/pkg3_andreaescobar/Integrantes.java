@@ -5,10 +5,21 @@
  */
 package lab.pkg3_andreaescobar;
 
+import java.util.Date;
+
 /**
  *
  * @author andre
  */
-public class Integrantes {
+public class Integrantes extends Pueblo{
+    String nombreIntegrante;
+    String apellido;
+    double altura;
+    Date nacimiento;
+    
+    
+    public Integrantes() {
+        super();
+    }
     
 }
