@@ -109,13 +109,13 @@ public class Lab3_AndreaEscobar {
                                 System.out.println("Eligio Elfo");
                                 System.out.println("¿Desea poseer un arma? S/N");
                                 char arma = sc.next().charAt(0);
-                                int ataque = 443,
-                                 defensa = 150,
-                                 curacion = 335;
+                                int ataque1 = 443,
+                                 defensa1 = 150,
+                                 curacion1 = 335;
                                 if (arma == 's' || arma == 'S') {
-                                    ataque = ataque + 10;
-                                    defensa = defensa + 10;
-                                    curacion = curacion + 10;
+                                    ataque1 = ataque1 + 10;
+                                    defensa1 = defensa1 + 10;
+                                    curacion1 = curacion1 + 10;
                                 }
                                 break;
 
@@ -129,10 +129,10 @@ public class Lab3_AndreaEscobar {
                                  defensaEnano = 200,
                                  curacionEnano = 50;
                                 if (barba == 's' || barba == 'S') {
-                                    ataque = ataqueEnano + 50;
+                                    ataqueEnano = ataqueEnano + 50;
                                 }
                                 if (hacha == 's' || hacha == 'S') {
-                                    ataque = ataqueEnano + 50;
+                                    ataqueEnano = ataqueEnano + 50;
                                 }
                                 break;
                             case 3:
@@ -193,7 +193,9 @@ public class Lab3_AndreaEscobar {
                                 break;
 
                         }
-                        //integrante.add(new Integrantes(nombreint, apellido, altura, fecha));
+                        System.out.println("Desea agregar otro peronaje [S/N]");
+                        resp = sc.next().charAt(0);
+                    }
 
                     }
                     break;
