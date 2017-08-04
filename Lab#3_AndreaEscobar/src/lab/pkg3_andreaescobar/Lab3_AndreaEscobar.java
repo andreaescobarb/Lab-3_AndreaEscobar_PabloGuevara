@@ -64,6 +64,12 @@ public class Lab3_AndreaEscobar {
                     
                     break;
                     
+                case 4:
+                    System.out.println("Lista de Pueblos");
+                    for (Pueblo pueblo1 : pueblo) {
+                        System.out.println(pueblo1);
+                    }
+                    break;
             }
             System.out.println("Desea continuar [S/N]");
             resp = sc.next().charAt(0);
