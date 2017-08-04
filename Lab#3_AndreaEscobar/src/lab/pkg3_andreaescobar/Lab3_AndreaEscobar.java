@@ -118,6 +118,7 @@ public class Lab3_AndreaEscobar {
                                     defensa1 = defensa1 + 10;
                                     curacion1 = curacion1 + 10;
                                 }
+
                                 break;
 
                             case 2:
@@ -211,17 +212,21 @@ public class Lab3_AndreaEscobar {
                                 switch (opbestia) {
                                     case 1:
                                         String bestia = "Aguila";
+                                        break;
                                     case 2:
                                         bestia = "Arana";
                                         System.out.println("F/M");
-                                        char sex= sc.next().charAt(0);
-                                        if (sex == 'F'||sex == 'f') {
-                                            
+                                        char sex = sc.next().charAt(0);
+                                        if (sex == 'F' || sex == 'f') {
+
                                         }
+                                        break;
                                     case 3:
                                         bestia = "Balrogs";
+                                        break;
                                     case 4:
                                         bestia = "Bestias Aladas";
+                                        break;
                                     case 5:
                                         bestia = "Dragones";
                                 }
