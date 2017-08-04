@@ -19,13 +19,13 @@ public class Integrantes extends Pueblo{
     private int poderataque;
     private int defensa;
     private int curacion;
-    
+    private String bestias;
     
     public Integrantes() {
         super();
     }
 
-    public Integrantes(String nombreIntegrante, String apellido, double altura, Date nacimiento, int poderataque, int defensa, int curacion) {
+    public Integrantes(String nombreIntegrante, String apellido, double altura, Date nacimiento, int poderataque, int defensa, int curacion, String bestias) {
         this.nombreIntegrante = nombreIntegrante;
         this.apellido = apellido;
         this.altura = altura;
@@ -33,6 +33,15 @@ public class Integrantes extends Pueblo{
         this.poderataque = poderataque;
         this.defensa = defensa;
         this.curacion = curacion;
+        this.bestias = bestias;
+    }
+
+    public String getBestias() {
+        return bestias;
+    }
+
+    public void setBestias(String bestias) {
+        this.bestias = bestias;
     }
 
     public String getNombreIntegrante() {
@@ -93,8 +102,9 @@ public class Integrantes extends Pueblo{
 
     @Override
     public String toString() {
-        return "Integrantes{" + "nombreIntegrante=" + nombreIntegrante + ", apellido=" + apellido + ", altura=" + altura + ", nacimiento=" + nacimiento + ", poderataque=" + poderataque + ", defensa=" + defensa + ", curacion=" + curacion + '}';
+        return "Integrantes{" + "nombreIntegrante=" + nombreIntegrante + ", apellido=" + apellido + ", altura=" + altura + ", nacimiento=" + nacimiento + ", poderataque=" + poderataque + ", defensa=" + defensa + ", curacion=" + curacion + ", bestias=" + bestias + '}';
     }
+
     
     
 
