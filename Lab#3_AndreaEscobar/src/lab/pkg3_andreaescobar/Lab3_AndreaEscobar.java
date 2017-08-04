@@ -1,13 +1,14 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 26570fab9e786063da2f6580270767a81cb006e9
 package lab.pkg3_andreaescobar;
 
 
 public class Lab3_AndreaEscobar {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
 }
