@@ -78,7 +78,7 @@ public class Lab3_AndreaEscobar {
                         }
                     }
                     break;
-                    
+
                 case 5:
                     char resp2 = 's';
                     while (resp2 == 's' || resp2 == 'S') {
@@ -125,25 +125,71 @@ public class Lab3_AndreaEscobar {
                                 char barba = sc.next().charAt(0);
                                 System.out.println("¿Desea poseer hacha? S/N");
                                 char hacha = sc.next().charAt(0);
-                                int ataqueEnano = 443,
-                                 defensaEnano = 150,
-                                 curacionEnano = 335;
+                                int ataqueEnano = 300,
+                                 defensaEnano = 200,
+                                 curacionEnano = 50;
                                 if (barba == 's' || barba == 'S') {
-                                    ataque = ataqueEnano + 10;
-                                    defensa = defensaEnano + 10;
-                                    curacion = curacionEnano + 10;
+                                    ataque = ataqueEnano + 50;
                                 }
                                 if (hacha == 's' || hacha == 'S') {
-                                    ataque = ataqueEnano + 10;
-                                    defensa = defensaEnano + 10;
-                                    curacion = curacionEnano + 10;
+                                    ataque = ataqueEnano + 50;
                                 }
                                 break;
                             case 3:
+                                System.out.println("Eligio Hobbit");
+                                int ataqueHobbit = 10,
+                                 defensaHobbit = 100,
+                                 curacionHobbit = 1;
+                                System.out.println("Ingrese cuantos anillos tiene 0-10: ");
+                                int anillos = sc.nextInt();
+                                if (anillos > 10 || anillos < 0) {
+                                    System.out.println("Ingrese un valor entre el rango");
+                                } else {
+                                    ataqueHobbit = (ataqueHobbit + (40 * anillos));
+                                    defensaHobbit = (defensaHobbit + (40 * anillos));
+                                    curacionHobbit = (defensaHobbit + (40 * anillos));
+                                }
+
                                 break;
                             case 4:
+                                System.out.println("Eligio Hombre");
+                                int ataqueHombre = 150,
+                                 defensaHombre = 140,
+                                 curacionHombre = 50;
+                                System.out.println("Elija un arma: ");
+                                System.out.println("1-Espada");
+                                System.out.println("2-Lanza");
+                                System.out.println("3-Arco");
+                                int opcarma = sc.nextInt();
+                                switch (opcarma) {
+                                    case 1:
+                                        ataqueHombre = ataqueHombre + 150;
+                                        break;
+                                    case 2:
+                                        ataqueHombre = ataqueHombre + 100;
+                                        break;
+                                    case 3:
+                                        ataqueHombre = ataqueHombre + 115;
+                                        break;
+                                }
                                 break;
                             case 5:
+                                System.out.println("Eligio Maiar");
+                                System.out.println("Elija un item");
+                                System.out.println("1-Sombrero");
+                                System.out.println("2-Baston");
+                                System.out.println("Elija su opcion: ");
+                                char item = sc.next().charAt(0);
+                                switch (item) {
+                                    case 1:
+                                        int ataque5 = 200,
+                                         curacion5 = 200;
+                                        break;
+                                    case 2:
+                                        ataque5 = 200;
+                                        curacion5 = 250;
+                                        break;
+                                }
                                 break;
 
                         }
