@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Lab3_AndreaEscobar {
@@ -12,6 +13,8 @@ public class Lab3_AndreaEscobar {
         Scanner sc = new Scanner(System.in);
         char resp = 's';
         //Integrantes llamarInte = new Integrantes();
+        Random r = new Random();
+        Bestias beast = new Bestias();
         ArrayList<Pueblo> pueblo = new ArrayList();
 
         ArrayList<Integrantes> integrante = new ArrayList();
@@ -192,42 +195,56 @@ public class Lab3_AndreaEscobar {
                                         break;
                                 }
 
-                                System.out.println("Que bestia desea tener");
-                                System.out.println("1- Aguilas");
-                                System.out.println("2- Arana");
-                                System.out.println("3- Balrogs");
-                                System.out.println("4- Bestias Aladas");
-                                System.out.println("5- Dragones");
-                                int opbestia = sc.nextInt();
-                                System.out.println("Ingrese numero de garras");
-                                int garras = sc.nextInt();
-                                System.out.println("Desea veneno [S/N]");
-                                char venenoc = sc.next().charAt(0);
-                                if (venenoc == 's' || venenoc == 'S') {
-                                    boolean veneno = true;
-                                } else {
-                                    boolean veneno = false;
-                                }
-                                switch (opbestia) {
-                                    case 1:
-                                        String bestia = "Aguila";
-                                    case 2:
-                                        bestia = "Arana";
-                                        System.out.println("F/M");
-                                        char sex= sc.next().charAt(0);
-                                        if (sex == 'F'||sex == 'f') {
-                                            
-                                        }
-                                    case 3:
-                                        bestia = "Balrogs";
-                                    case 4:
-                                        bestia = "Bestias Aladas";
-                                    case 5:
-                                        bestia = "Dragones";
-                                }
-
                         }
-
+                        int vida;
+                        boolean veneno;
+                        System.out.println("Que bestia desea tener");
+                        System.out.println("1- Aguilas");
+                        System.out.println("2- Arana");
+                        System.out.println("3- Balrogs");
+                        System.out.println("4- Bestias Aladas");
+                        System.out.println("5- Dragones");
+                        int opbestia = sc.nextInt();
+                        System.out.println("Ingrese numero de garras");
+                        int garras = sc.nextInt();
+                        System.out.println("Desea veneno [S/N]");
+                        char venenoc = sc.next().charAt(0);
+                        if (venenoc == 's' || venenoc == 'S') {
+                            veneno = true;
+                        } else {
+                            veneno = false;
+                        }
+                        switch (opbestia) {
+                            case 1:
+                                String bestia = "Aguila";
+                                beast.garras = garras;
+                                beast.vida = 50 + r.nextInt(150);
+                            case 2:
+                                bestia = "Arana";
+                                beast.garras = garras;
+                                beast.veneno = veneno;
+                                System.out.println("F/M");
+                                char sex = sc.next().charAt(0);
+                                if (sex == 'F' || sex == 'f') {
+                                    beast.vida = (50 + r.nextInt(150)) + 50;
+                                }
+                            case 3:
+                                beast.garras = garras;
+                                beast.veneno = veneno;
+                                beast.vida = 50 + r.nextInt(150);
+                                bestia = "Balrogs";
+                            case 4:
+                                beast.garras = garras;
+                                beast.veneno = veneno;
+                                beast.vida = 50 + r.nextInt(150);
+                                bestia = "Bestias Aladas";
+                            case 5:
+                                beast.garras = garras;
+                                beast.veneno = veneno;
+                                beast.vida = 50 + r.nextInt(150);
+                                bestia = "Dragones";
+                        }
+                        
                         System.out.println("Desea agregar otro peronaje [S/N]");
                         resp = sc.next().charAt(0);
                     }
