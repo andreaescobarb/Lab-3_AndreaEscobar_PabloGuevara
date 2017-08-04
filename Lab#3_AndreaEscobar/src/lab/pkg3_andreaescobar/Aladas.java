@@ -1,14 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab.pkg3_andreaescobar;
 
-/**
- *
- * @author andre
- */
-public class Aladas {
+
+public class Aladas extends Bestias {
+    private int velocidad;
+
+    public Aladas() {
+        super();
+    }
+
+    public Aladas(int velocidad) {
+        this.velocidad = velocidad;
+    }
+
+    public int getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
+    }
+
+    @Override
+    public String toString() {
+        return "Aladas{" + "velocidad=" + velocidad + '}';
+    }
+    
     
 }

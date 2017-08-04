@@ -1,14 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab.pkg3_andreaescobar;
 
-/**
- *
- * @author andre
- */
 public class Araña {
+    private boolean sexo;
+
+    public Araña() {
+        super();
+    }
+
+    public Araña(boolean sexo) {
+        this.sexo = sexo;
+    }
+
+    public boolean isSexo() {
+        return sexo;
+    }
+
+    public void setSexo(boolean sexo) {
+        this.sexo = sexo;
+    }
+
+    @Override
+    public String toString() {
+        return "Ara\u00f1a{" + "sexo=" + sexo + '}';
+    }
+    
     
 }

@@ -1,14 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab.pkg3_andreaescobar;
 
-/**
- *
- * @author andre
- */
-public class Balrogs {
+public class Balrogs extends Bestias {
+    private boolean latigo;
+
+    public Balrogs() {
+        super();
+    }
     
+    public Balrogs(boolean latigo) {
+        this.latigo = latigo;
+    }
+
+    public boolean isLatigo() {
+        return latigo;
+    }
+
+    public void setLatigo(boolean latigo) {
+        this.latigo = latigo;
+    }
+
+    @Override
+    public String toString() {
+        return "Balrogs{" + "latigo=" + latigo + '}';
+    }
+    
+
 }
