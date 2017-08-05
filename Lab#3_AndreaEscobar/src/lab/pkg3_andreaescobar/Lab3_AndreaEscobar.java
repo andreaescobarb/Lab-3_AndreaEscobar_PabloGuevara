@@ -108,6 +108,10 @@ public class Lab3_AndreaEscobar {
                         System.out.println("5-Maimar");
                         System.out.println("Ingrese numero a elegir: ");
                         int opcpers = sc.nextInt();
+                        int poderataque;
+                        int defensa;
+                        int curacion;
+
                         switch (opcpers) {
                             case 1:
                                 System.out.println("Eligio Elfo");
@@ -121,7 +125,9 @@ public class Lab3_AndreaEscobar {
                                     defensa1 = defensa1 + 10;
                                     curacion1 = curacion1 + 10;
                                 }
-
+                                poderataque = ataque1;
+                                defensa = defensa1;
+                                curacion = curacion1;
                                 break;
 
                             case 2:
@@ -139,6 +145,9 @@ public class Lab3_AndreaEscobar {
                                 if (hacha == 's' || hacha == 'S') {
                                     ataqueEnano = ataqueEnano + 50;
                                 }
+                                poderataque = ataqueEnano;
+                                defensa = defensaEnano;
+                                curacion = curacionEnano;
                                 break;
                             case 3:
                                 System.out.println("Eligio Hobbit");
@@ -154,7 +163,9 @@ public class Lab3_AndreaEscobar {
                                     defensaHobbit = (defensaHobbit + (40 * anillos));
                                     curacionHobbit = (defensaHobbit + (40 * anillos));
                                 }
-
+                                poderataque = ataqueHobbit;
+                                defensa = defensaHobbit;
+                                curacion = curacionHobbit;
                                 break;
                             case 4:
                                 System.out.println("Eligio Hombre");
@@ -177,6 +188,9 @@ public class Lab3_AndreaEscobar {
                                         ataqueHombre = ataqueHombre + 115;
                                         break;
                                 }
+                                poderataque = ataqueHombre;
+                                defensa = defensaHombre;
+                                curacion = curacionHombre;
                                 break;
                             case 5:
                                 System.out.println("Eligio Maiar");
@@ -189,10 +203,16 @@ public class Lab3_AndreaEscobar {
                                     case 1:
                                         int ataque5 = 200,
                                          curacion5 = 200;
+                                        poderataque = ataque5;
+
+                                        curacion = curacion5;
                                         break;
                                     case 2:
                                         ataque5 = 200;
                                         curacion5 = 250;
+                                        poderataque = ataque5;
+
+                                        curacion = curacion5;
                                         break;
                                 }
 
