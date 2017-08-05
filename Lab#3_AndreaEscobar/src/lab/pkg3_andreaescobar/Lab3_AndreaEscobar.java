@@ -89,8 +89,8 @@ public class Lab3_AndreaEscobar {
                     while (resp2 == 's' || resp2 == 'S') {
                         System.out.println(pueblo);
                         System.out.println("Escoja un pueblo: ");
-                        int pospueblo=sc.nextInt();
-                        
+                        int pospueblo = sc.nextInt();
+
                         System.out.println("Ingrese nombre: ");
                         String nombreint = sc.next();
                         System.out.println("Ingrese apellido: ");
@@ -113,9 +113,9 @@ public class Lab3_AndreaEscobar {
                         System.out.println("5-Maimar");
                         System.out.println("Ingrese numero a elegir: ");
                         int opcpers = sc.nextInt();
-                        int poderataque=0;
-                        int defensa=0;
-                        int curacion=0;
+                        int poderataque = 0;
+                        int defensa = 0;
+                        int curacion = 0;
                         String bestia = "";
                         switch (opcpers) {
                             case 1:
@@ -216,7 +216,7 @@ public class Lab3_AndreaEscobar {
                                         ataque5 = 200;
                                         curacion5 = 250;
                                         poderataque = ataque5;
-                                        defensa =0;
+                                        defensa = 0;
                                         curacion = curacion5;
                                         break;
                                 }
@@ -280,10 +280,11 @@ public class Lab3_AndreaEscobar {
                         System.out.println("Desea agregar otro peronaje [S/N]");
                         resp = sc.next().charAt(0);
                     }
-                
-            System.out.println("Desea continuar [S/N]");
-            resp = sc.next().charAt(0);
-        }
-    }
 
+                    System.out.println("Desea continuar [S/N]");
+                    resp = sc.next().charAt(0);
+            }
+        }
+
+    }
 }
