@@ -108,10 +108,10 @@ public class Lab3_AndreaEscobar {
                         System.out.println("5-Maimar");
                         System.out.println("Ingrese numero a elegir: ");
                         int opcpers = sc.nextInt();
-                        int poderataque;
-                        int defensa;
-                        int curacion;
-
+                        int poderataque=0;
+                        int defensa=0;
+                        int curacion=0;
+                        String bestia = "";
                         switch (opcpers) {
                             case 1:
                                 System.out.println("Eligio Elfo");
@@ -204,18 +204,17 @@ public class Lab3_AndreaEscobar {
                                         int ataque5 = 200,
                                          curacion5 = 200;
                                         poderataque = ataque5;
-
+                                        defensa = 0;
                                         curacion = curacion5;
                                         break;
                                     case 2:
                                         ataque5 = 200;
                                         curacion5 = 250;
                                         poderataque = ataque5;
-
+                                        defensa =0;
                                         curacion = curacion5;
                                         break;
                                 }
-
                         }
                         int vida;
                         boolean veneno;
@@ -237,9 +236,10 @@ public class Lab3_AndreaEscobar {
                         }
                         switch (opbestia) {
                             case 1:
-                                String bestia = "Aguila";
+                                bestia = "Aguila";
                                 beast.garras = garras;
                                 beast.vida = 50 + r.nextInt(150);
+                                break;
                             case 2:
                                 bestia = "Arana";
                                 beast.garras = garras;
@@ -249,16 +249,19 @@ public class Lab3_AndreaEscobar {
                                 if (sex == 'F' || sex == 'f') {
                                     beast.vida = (50 + r.nextInt(150)) + 50;
                                 }
+                                break;
                             case 3:
                                 beast.garras = garras;
                                 beast.veneno = veneno;
                                 beast.vida = 50 + r.nextInt(150);
                                 bestia = "Balrogs";
+                                break;
                             case 4:
                                 beast.garras = garras;
                                 beast.veneno = veneno;
                                 beast.vida = 50 + r.nextInt(150);
                                 bestia = "Bestias Aladas";
+                                break;
                             case 5:
                                 beast.garras = garras;
                                 beast.veneno = veneno;
@@ -266,7 +269,8 @@ public class Lab3_AndreaEscobar {
                                 bestia = "Dragones";
                                 break;
                         }
-
+                        integrante.add(new Integrantes(nombreint, apellido, altura, fecha, poderataque, defensa, curacion, bestia));
+                        System.out.println(integrante);
                         System.out.println("Desea agregar otro peronaje [S/N]");
                         resp = sc.next().charAt(0);
                     }
