@@ -121,6 +121,7 @@ public class Lab3_AndreaEscobar {
                                     defensa1 = defensa1 + 10;
                                     curacion1 = curacion1 + 10;
                                 }
+
                                 break;
 
                             case 2:
@@ -243,17 +244,17 @@ public class Lab3_AndreaEscobar {
                                 beast.veneno = veneno;
                                 beast.vida = 50 + r.nextInt(150);
                                 bestia = "Dragones";
+                                break;
                         }
-                        
+
                         System.out.println("Desea agregar otro peronaje [S/N]");
                         resp = sc.next().charAt(0);
                     }
 
             }
-            break;
-
+            System.out.println("Desea continuar [S/N]");
+            resp = sc.next().charAt(0);
         }
-        System.out.println("Desea continuar [S/N]");
-        resp = sc.next().charAt(0);
     }
+
 }
