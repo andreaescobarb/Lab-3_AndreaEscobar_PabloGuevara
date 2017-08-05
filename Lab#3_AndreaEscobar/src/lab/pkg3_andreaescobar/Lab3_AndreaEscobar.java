@@ -28,6 +28,7 @@ public class Lab3_AndreaEscobar {
             System.out.println("6-Modificar Personaje");
             System.out.println("7-Elminar personaje");
             System.out.println("8-Motrar Personajes");
+            System.out.println("9-Simulacion Pueblo");
             System.out.println("Ingrese su opcion: ");
             int op = sc.nextInt();
             switch (op) {
@@ -86,6 +87,10 @@ public class Lab3_AndreaEscobar {
                 case 5:
                     char resp2 = 's';
                     while (resp2 == 's' || resp2 == 'S') {
+                        System.out.println(pueblo);
+                        System.out.println("Escoja un pueblo: ");
+                        int pospueblo=sc.nextInt();
+                        
                         System.out.println("Ingrese nombre: ");
                         String nombreint = sc.next();
                         System.out.println("Ingrese apellido: ");
@@ -271,11 +276,11 @@ public class Lab3_AndreaEscobar {
                         }
                         integrante.add(new Integrantes(nombreint, apellido, altura, fecha, poderataque, defensa, curacion, bestia));
                         System.out.println(integrante);
+                        pueblo.get(pospueblo).setInteg(integrante);
                         System.out.println("Desea agregar otro peronaje [S/N]");
                         resp = sc.next().charAt(0);
                     }
-
-            }
+                
             System.out.println("Desea continuar [S/N]");
             resp = sc.next().charAt(0);
         }
